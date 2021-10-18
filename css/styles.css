@@ -65,11 +65,11 @@ body{
     width: 100vw;
 }
 
-/* classes */
+/* classes  */ 
 
 .calculator{
     color: var(--main-font-color);
-    height: 70vh;
+    height: 75vh;
     left: 40%;
     position: relative;
     top: 25%;
@@ -91,9 +91,9 @@ body{
 /* output contianer for displaying output */
 .result-container{
     background: var(--result-container-background);
-    border-radius: 5px;
+    border-radius: 8px;
     color: var(--result-container-color);
-    margin: 10px auto;
+    margin: 25px auto;
     height: 8vh;
     position: absolute;
     text-align: right;
@@ -112,14 +112,15 @@ body{
 
 /* button conatiner for housing buttons */
 .calculator-buttons{
+    border-radius: 8px;
     background: var(--keypad-background);
     display: grid;
-    column-gap: 5px;
+    column-gap: 4px;
     grid-auto-columns: 100px;
     grid-template-columns: repeat(4, 1fr);
-    height: 50vh;
-    margin: 20px auto;
-    padding: 15px;
+    height: 45vh;
+    margin: 25px auto;
+    padding: 12px;
 }
 .key{
     background: var(--key-background);
@@ -151,11 +152,16 @@ body{
 } */
 
 .number-key{
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 4px;
 }
 
 /* operators */
 .operator{
+    font-size: 23px;
+    font-weight: bold;
+    padding: 4px;
 }
 .equal {
     background: var(--equal-key-background);
@@ -235,3 +241,4 @@ input[type='range']::-webkit-slider-runnable-track {
   } */
 
   /* The slider itself */
+/* https://github.com/GouthamKamath/calculator-app/settings/pages */
