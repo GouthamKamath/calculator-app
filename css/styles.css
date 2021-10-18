@@ -86,14 +86,7 @@ body{
     top: 10%;
     position: relative;
 }
-/* theme selection */
-.theme{
-    font-size: 10px;
-    bottom: 10px;
-    position: relative;
-    left: 70%;
-    text-transform: uppercase;
-}
+
 
 /* output contianer for displaying output */
 .result-container{
@@ -184,18 +177,61 @@ body{
     color: #fff;
 }
 
-/* slider */
-
-/* #toggleBar{
-    position: relative;
-    left: 5px;
-    height: 10px;
-    width: 50px;
-} */
-
-input[type ='range']{
-    position: relative;
-    left: 5px;
-    height: 10px;
-    width: 50px;
+/* number for selection toggle */
+.number{
+    font-size: 10px;
+    /* padding-right: 2px; */
+    letter-spacing: 6px;
+    position: absolute;
+    right: 5px;
+    top: 0px;
 }
+
+/* theme selection */
+.theme{
+    font-size: 10px;
+    bottom: 10px;
+    position: relative;
+    left: 240px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+input[type='range']{
+    -webkit-appearance: none;
+    
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    background: var(--keypad-background);
+    border-radius: 30px;
+    border: none;
+    bottom: 0px;
+    cursor: pointer;
+    height: 17.4px;
+    left: 38px;
+    position: absolute;
+    width: 60px;
+
+  }
+  
+  input[type='range']:focus::-webkit-slider-runnable-track {
+    background: var(--keypad-background);
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--equal-key-background);
+    border-radius:50%;
+    height: 12px;
+    margin: 2px 0px 2px 0px;
+    width: 12px;
+  }
+
+  /* input[type=range]::-webkit-slider  {
+    height: 36px;
+    width: 16px;
+    background: red;
+  } */
+
+  /* The slider itself */
